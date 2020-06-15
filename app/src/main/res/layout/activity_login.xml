@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    tools:context=".ui.LoginActivity"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/main_ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <include
+        layout="@layout/part_commont_title"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="31dp" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_below="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你好，小丑面罩"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/fingerprint"
+            android:layout_below="@+id/title1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="300dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/prompt"
+            android:layout_below="@+id/fingerprint"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
